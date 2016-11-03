@@ -1,0 +1,135 @@
+.custom-check-radio .control-group {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 200px;
+  height: 210px;
+  margin: 10px;
+}
+.custom-check-radio  .control {
+  display: block;
+  position: relative;
+  padding-left:28px;
+  margin-bottom:0px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.custom-check-radio .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-check-radio .control__indicator {
+  position: absolute;
+  top:1px;
+  left: 0;
+  height: 19px;
+  width: 19px;
+    background: #f9f9f9;
+      border: 1px solid #e2e2e2;
+    color: rgba(0, 0, 0, 0.8);
+	border-radius:5px;
+}
+.custom-check-radio .control--radio .control__indicator {
+  border-radius: 50%;
+}
+.custom-check-radio .control:hover input ~ .control__indicator,
+.custom-check-radio .control input:focus ~ .control__indicator {
+  background: #fff;
+}
+.custom-check-radio .control input:checked ~ .control__indicator {
+  background: #fff;
+}
+.custom-check-radio .control:hover input:not([disabled]):checked ~ .control__indicator,
+.custom-check-radio .control input:checked:focus ~ .control__indicator {
+  background: #fff;
+}
+.custom-check-radio .control input:disabled ~ .control__indicator {
+  background: #fff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.custom-check-radio .control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.custom-check-radio .control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.custom-check-radio .control--checkbox .control__indicator:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #3256ad;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.custom-check-radio .control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.custom-check-radio .control--radio .control__indicator:after {
+	left:5px;
+	top:5px;
+	height:7px;
+	width:7px;
+	border-radius: 50%;
+	background: #3256ad;
+}
+.custom-check-radio .control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+.custom-check-radio .select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.custom-check-radio .select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.custom-check-radio .select select::-ms-expand {
+  display: none;
+}
+.custom-check-radio .select select:hover,
+.custom-check-radio .select select:focus {
+  color: #000;
+  background: #ccc;
+}
+.custom-check-radio .select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.custom-check-radio .select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.custom-check-radio .select select:hover ~ .select__arrow,
+.custom-check-radio .select select:focus ~ .select__arrow {
+  border-top-color: #000;
+}
+.custom-check-radio .select select:disabled ~ .select__arrow {
+  border-top-color: #ccc;
+}

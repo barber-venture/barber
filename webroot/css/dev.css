@@ -1,0 +1,162 @@
+.pre-login-content .about-area h4 {
+	font-weight: normal!important;
+	text-transform: none!important;
+}
+table.table-list thead th {
+	position: relative;
+	background-image: none !important; /* Remove the DataTables bootstrap integration styling */
+}
+table.table-list thead th a {
+	display: block;
+	width: 100%;
+}
+table.table-list thead th a.asc, table.table-list thead th a.desc {
+	font-family: "Themify";
+	display: block;
+	width: 100%;
+}
+table.table-list thead th a.sorting:after, table.table-list thead th a.asc:after, table.table-list thead th a.desc:after {
+	color: #ddd;
+	font-size: 0.8em;
+	padding-top: 0.12em;
+	right: 8px;
+	position: absolute;
+}
+table.table-list thead th a.asc:after {
+	content: " \e648";
+}
+table.table-list thead th a.desc:after {
+	content: " \e64b";
+}
+/* In Bootstrap and Foundation the padding top is a little different from the DataTables stylesheet */
+table.table thead th a.sorting:after, table.table thead th a.asc:after, table.table thead th a.desc:after {
+	top: 12px;
+}
+.newGoSearch .custom-search-area{position:relative; width:100%;}
+.new__Search{float: right;}
+.new__Search__col_left{float:left; position: relative; margin-right:10px;}
+.new__Search__col_left .newGoSearch{width:400px;}
+.new__Search__col_right{float:left;	position: relative;}
+.new__Search__col_right .filter{top:8px !important;}
+.new__Search__col_right .btn-group a{max-width:210px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.new__Search__col_right .btn-group a.selecter{ text-align:left;}
+.chosen-container-single a.chosen-single{text-overflow:ellipsis; overflow:hidden; white-space:nowrap; width:190px;} 
+.panel-footer .payment-footer-block .find-email-block{float:left; margin-right:5px; width:450px;}
+.panel-footer .payment-footer-block .find-email-block input{width:310px; float:left;}
+@media (max-width:1100px) {
+.new__Search__col_left .newGoSearch{width:350px;}
+}
+@media (max-width:991px) {
+.new__Search{ width:100%; margin-top:-10px;}
+.new__Search__col_left{ width:50%; margin-right:0px; padding:0 5px;}
+.new__Search__col_left .newGoSearch{width:100%; }
+.new__Search__col_right{width:50%; padding:0px 5px; position:relative;}
+.new__Search__col_right .btn.dropdown-toggle{ position:absolute; right:0px; top:0px; z-index:9999;}
+.new__Search__col_right .filter{ width:100%;}
+.new__Search__col_right .btn-group a.selecter{width:100%; max-width:inherit; padding-right:26px; }
+
+.panel-footer .payment-footer-block .find-email-block{width:340px;}
+.panel-footer .payment-footer-block .find-email-block input{width:200px;}
+}
+@media (max-width:640px) {
+.new__Search{min-height:98px;}
+.new__Search__col_left{ width:100%; padding:0px;}
+.new__Search__col_right{ width:100%; padding:0px;}
+.new__Search__col_right .filter{top:4px !important;}
+
+.panel-footer .payment-footer-block{ width:100%; text-align:center;}
+.panel-footer .payment-footer-block .find-email-block{width:100%; margin-bottom:10px; margin-right:0px;}
+.panel-footer .payment-footer-block .find-email-block input{width:100%; margin-bottom:10px; }
+.panel-footer .payment-footer-block .payment-form-button{ width:100%; text-align:center;}
+.panel-footer .payment-footer-block .payment-form-button button{ margin-bottom:10px;}
+}
+.cus-upload input[type="file"] {
+    
+    height: 48px;
+    margin-left: -12px;
+    margin-top: -8px;
+    opacity: 0;
+    position: absolute;
+    width: 48px;
+}
+.custom-file-btn.input-group-btn{display:inline-flex!important;}
+.secure-btn{color: #8bc34a;text-decoration: underline;}
+.text-white{color: #fff!important;}
+.radio-inline.icheck label:nth-of-type(1){margin-right: 5px!important;}
+.info-tile .tile-heading{font-size: 12px!important;}
+.info-tile .tile-body{font-size: 26px!important;}
+.text-darkgray{color: #616161!important;}
+.text-underline{text-decoration: underline!important;}
+.modal-backdrop {
+	z-index: 0 !important;
+}
+.profile-img-section .profile-photo-block .upload-img ul li a span{
+	padding:0;
+}
+.star_empty{
+	background: url(../img/star_empty.png) no-repeat center center;
+	border: 0 none;
+	color: #000;
+	cursor: pointer;
+	float: left !important;
+	font-size: 26px;
+	font-weight: 700;
+	height: 30px;
+	line-height: 1;
+	outline: medium none;
+	padding: 0;
+	position: absolute;
+	left:20px;
+	text-shadow: 0 1px 0 #fff;
+	top: 2px;
+	width: 30px;
+	z-index: 99999;
+}
+.star_fill{
+	background: url(../img/star_fill.png) no-repeat center center;
+	border: 0 none;
+	color: #000;
+	cursor: pointer;
+	float: left !important;
+	font-size: 26px;
+	font-weight: 700;
+	height: 30px;
+	line-height: 1;
+	margin-right: 140px;
+	outline: medium none;
+	padding: 0;
+	position: absolute;
+	left:20px;
+	text-shadow: 0 1px 0 #fff;
+	top: 2px;
+	width: 30px;
+	z-index: 99999;
+}
+
+/*.basic-detail{
+	width: 868px !important;
+	float:none !important;
+}*/
+.profile-banner {
+  background: none!important;
+}
+.error-message{color:#a94442;}
+
+.star_empty, .star_fill{ border-radius:100%; width:30px; height:30px; background-color:#fff; z-index:9;}
+
+@media only screen and (max-width:639px) {
+	.star_empty, .star_fill{ margin-right: inherit; left:0; margin:0 auto; right:0;}
+}
+.select2-container {
+  border: medium none;
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+}
+ul.chatheads li.active{background:#ececec;}
+/*#boxscroll{
+	width:250px!important;
+}*/

@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+	RewriteRule (blog/.*) $1 [L] # adjust the regex to what you want.
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]	
+</IfModule>
